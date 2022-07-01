@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 .a-canvas {
@@ -31,9 +32,9 @@ body {
     top: 0;
     bottom: 0;
     margin: auto;
-    background-color: aquamarine;
+    background-color: transparent;
     width: 200px;
-    height: 200px;
+    height: 100vh;
     z-index: 1001;
 }
 
@@ -41,12 +42,13 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: -9em;
 }
 
 .SplashUi a {
-    margin: 3em;
+    margin: 2em;
     text-decoration: none;
     font-weight: bolder;
-    color: antiquewhite;
+    font-size: 2vw;
+    color: rgb(255, 145, 0);
+    mix-blend-mode: difference;
 }

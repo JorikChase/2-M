@@ -1,43 +1,52 @@
-div {
-    z-index: 1000;
-    color: green;
+body {
+    padding: 0;
+    margin: 0;
 }
 
 .a-canvas {
-    width: 50%;
-    height: 50%;
-    right: 0;
-    top: 1px;
-    left: unset;
+    width: 50vw;
     position: absolute;
+    top: 0;
+    right: 0;
+    left: unset;
 }
 
-.BoxUi {
-    width: 30vw;
-    height: 30vw;
-    background-color: blanchedalmond;
-}
-
-.UI {
+.SplashA {
+    background-color: rgb(17, 171, 84);
+    background-image: url("snakebat.gif");
+    background-position: 25vw;
+    background-size: cover;
     width: 50vw;
     height: 100vh;
-    top: 0px;
-    left: 0px;
     position: absolute;
+    left: 0;
+    top: 0;
     z-index: 1000;
-    background-color: beige;
 }
 
-.Telo {
-    height: 500vh;
-    background: #000;
+.NavBar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    z-index: 1001;
 }
 
-canvas {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 50vw;
-    max-height: 100vh;
+.SplashUi {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -9em;
+}
+
+.SplashUi a {
+    margin: 3em;
+    text-decoration: none;
+    font-weight: bolder;
+    color: antiquewhite;
 }
